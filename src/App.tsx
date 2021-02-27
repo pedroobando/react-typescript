@@ -9,7 +9,7 @@ const App = () => {
       <Container style={{ marginTop: "50px" }}>
         <Header as="h1" content="TypeScript en ReactJs" color="orange" />
         <Header as="h3" color="green" style={{ marginTop: "70px" }}>
-          <Icon name="plug" />
+          <Icon name="setting" />
           <Header.Content>useState</Header.Content>
         </Header>
         <Counter />
@@ -17,7 +17,7 @@ const App = () => {
 
         <div className="ui divider"></div>
         <Header as="h3" color="green" style={{ marginTop: "70px" }}>
-          <Icon name="plug" />
+          <Icon name="setting" />
           <Header.Content>useEffect + useRef</Header.Content>
         </Header>
         <TimerPadre />

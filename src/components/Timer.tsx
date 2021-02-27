@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import { Header, Icon } from "semantic-ui-react";
 
 type TimerArgs = {
   milisegundos: number;
@@ -15,9 +16,10 @@ export const Timer = ({ milisegundos }: TimerArgs) => {
   }, [milisegundos]);
   return (
     <>
-      <h4>
-        Timer: <small>{segundos}</small>
-      </h4>
+      <Header as="h3" color="blue">
+        <Icon name="time" />
+        <Header.Content>Timer: {segundos}</Header.Content>
+      </Header>
     </>
   );
 };
