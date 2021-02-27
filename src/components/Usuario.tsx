@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Container, Header } from "semantic-ui-react";
+import { Button, Header, Icon } from "semantic-ui-react";
 
 interface User {
   uid: string;
@@ -21,18 +21,26 @@ const Usuario = () => {
     });
   };
 
+  const logout = (): void => {
+    setUser(tempUser);
+  };
+
   return (
-    <Container>
-      <Header as="h2" content="Usuario: useState" style={{ margin: "20px 0" }} />
+    <>
+      <Header as="h3" color="green">
+        <Icon name="user" />
+        <Header.Content>useState: usuario</Header.Content>
+      </Header>
 
       <Button basic primary content="Login" onClick={login} />
+      <Button basic color="purple" content="Logout" onClick={logout} />
 
       {!user ? (
         <pre style={{ color: "red", fontSize: "bold" }}>No hay usuario</pre>
       ) : (
         <pre style={{ margin: "20px 0" }}>{JSON.stringify(user)}</pre>
       )}
-    </Container>
+    </>
   );
 };
 

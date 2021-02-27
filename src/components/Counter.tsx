@@ -19,6 +19,7 @@ const Counter = () => {
         Valor: {counter}
       </Header>
 
+      <Button content="-1" basic color="orange" onClick={() => incrementar(-1)} />
       <Button content="+" basic color="green" onClick={() => incrementar(1)} />
       <Button content="+ 2" primary basic onClick={() => incrementar(2)} />
 

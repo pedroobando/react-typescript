@@ -14,7 +14,12 @@ const App = () => {
         </Header>
         <Counter />
         <Usuario />
-        <hr />
+
+        <div className="ui divider"></div>
+        <Header as="h3" color="green" style={{ marginTop: "70px" }}>
+          <Icon name="plug" />
+          <Header.Content>useEffect + useRef</Header.Content>
+        </Header>
         <TimerPadre />
       </Container>
     </>
