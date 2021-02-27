@@ -15,14 +15,14 @@ const Counter = () => {
 
   return (
     <>
-      <Header as="h3" context="Counter: useState" />
-      <span> Valor: {counter}</span>
-      <br />
+      <Header as="h3" color="olive">
+        Valor: {counter}
+      </Header>
 
-      <Button content="+" basic primary onClick={() => incrementar(1)} />
-      <Button content="+ 2" primary onClick={() => incrementar(2)} />
+      <Button content="+" basic color="green" onClick={() => incrementar(1)} />
+      <Button content="+ 2" primary basic onClick={() => incrementar(2)} />
 
-      <Button content="RESET" basic color="red" onClick={() => reset()} />
+      <Button content="RESET" color="red" onClick={() => reset()} />
     </>
   );
 };

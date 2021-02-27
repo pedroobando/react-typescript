@@ -1,5 +1,4 @@
-import React from "react";
-import "./CalendarApp.css";
+import { Container, Icon, Header } from "semantic-ui-react";
 import Counter from "./components/Counter";
 import { TimerPadre } from "./components/TimerPadre";
 import Usuario from "./components/Usuario";
@@ -7,11 +6,17 @@ import Usuario from "./components/Usuario";
 const App = () => {
   return (
     <>
-      <h1>Hola Mundo</h1>
-      <Counter />
-      <Usuario />
-      <hr />
-      <TimerPadre />
+      <Container style={{ marginTop: "50px" }}>
+        <Header as="h1" content="TypeScript en ReactJs" color="orange" />
+        <Header as="h3" color="green" style={{ marginTop: "70px" }}>
+          <Icon name="plug" />
+          <Header.Content>useState</Header.Content>
+        </Header>
+        <Counter />
+        <Usuario />
+        <hr />
+        <TimerPadre />
+      </Container>
     </>
   );
 };
