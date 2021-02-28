@@ -35,6 +35,10 @@ const App = () => {
         </Header>
         <Formulario />
       </Container>
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 };
