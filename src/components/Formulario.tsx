@@ -1,17 +1,6 @@
-import { ChangeEvent, useState } from "react";
 import { Input } from "semantic-ui-react";
 
 export const Formulario = () => {
-  const [formulario, setFormulario] = useState({ email: "", nombre: "" });
-  const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = target;
-
-    setFormulario({
-      ...formulario,
-      [name]: value,
-    });
-  };
-
   return (
     <form autoComplete="off">
       <Input
