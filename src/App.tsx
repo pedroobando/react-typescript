@@ -1,6 +1,7 @@
 import { Container, Icon, Header } from "semantic-ui-react";
 import { ContadorRed } from "./components/ContadorRed";
 import Counter from "./components/Counter";
+import { Formulario } from "./components/Formulario";
 import { TimerPadre } from "./components/TimerPadre";
 import Usuario from "./components/Usuario";
 
@@ -27,6 +28,12 @@ const App = () => {
           <Header.Content>useReducer</Header.Content>
         </Header>
         <ContadorRed />
+
+        <Header as="h3" color="green" style={{ marginTop: "70px" }}>
+          <Icon name="setting" />
+          <Header.Content>Custom Hook</Header.Content>
+        </Header>
+        <Formulario />
       </Container>
     </>
   );
